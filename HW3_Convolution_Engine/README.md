@@ -2,6 +2,12 @@
 
 A two-stage image processing accelerator: **barcode region detection** followed by **2D convolution** producing four parallel output streams. The first project taken through **logic synthesis** with full SDC constraints and timing/area sign-off on a TSMC 0.13 µm library.
 
+<p align="center">
+  <img src="../docs/images/convolution_io.png" width="720" alt="HW3 convolution accelerator: input image and corresponding output feature maps"/>
+  <br/>
+  <sub><em>Input image alongside the four parallel convolved output streams produced by the accelerator.</em></sub>
+</p>
+
 ## What This Demonstrates
 
 - **Hierarchical RTL** — top-level controller (`core.sv`) orchestrates two specialized engines (`Barcode.sv`, `ConvCore.sv`) sharing a single SRAM

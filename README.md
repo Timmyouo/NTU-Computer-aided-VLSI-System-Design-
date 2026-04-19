@@ -6,6 +6,13 @@
 **Languages:** SystemVerilog, Verilog, TCL  
 **Technology:** TSMC 0.13 µm standard-cell library (CBDK / CIC)  
 
+<p align="center">
+  <img src="docs/images/bch_floorplan.png" width="720" alt="Final BCH decoder post-route layout in Cadence Innovus"/>
+  <br/>
+  <sub><em>Final project &mdash; BCH error-correcting decoder, post-route layout in Cadence Innovus.<br/>
+  TSMC 0.13&nbsp;&micro;m, 58k standard cells, 77.8% core utilization, 0 DRC / 0 antenna violations.</em></sub>
+</p>
+
 ---
 
 ## Skills Demonstrated
@@ -52,7 +59,7 @@
 
 ```
 CVSD/
-├── docs/images/              Reserved screenshots (see Visual highlights above)
+├── docs/images/              Figures used by the READMEs
 ├── HW1_ALU/                  Fixed-point ALU
 ├── HW2_Single_Cycle_CPU/     RISC-V-subset CPU + custom FPU
 ├── HW3_Convolution_Engine/   2D convolution accelerator (RTL → SYN)
@@ -81,5 +88,3 @@ A focused per-project README inside each folder describes the architecture, key 
 This repository contains the **source RTL, scripts, constraints, and tool reports** from the original flow. Tool-generated artifacts that are large or environment-specific are excluded via `.gitignore` (Innovus `DBS/`, VCS `simv` / `csrc/`, SpyGlass DB, `*.gds`, compressed timing dumps, etc.) — the actual reports and netlists used for sign-off are kept.
 
 Re-running the flow requires Synopsys / Cadence licenses and the TSMC 0.13 µm CBDK PDK from the NTU CVSD lab environment.
-
-  <img src="docs/images/bch_floorplan.png" width="720" alt="Slot 1: add bch_floorplan.png — BCH post-route layout"/>
