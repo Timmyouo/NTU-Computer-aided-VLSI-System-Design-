@@ -6,25 +6,6 @@
 **Languages:** SystemVerilog, Verilog, TCL  
 **Technology:** TSMC 0.13 µm standard-cell library (CBDK / CIC)  
 
-## Visual highlights
-
-Reserved image slots — add PNG or JPG files under [`docs/images/`](docs/images/) using **exactly** these filenames (no README edit needed after you drop the files in and commit):
-
-| Slot | Suggested content | File |
-|:----:|-------------------|------|
-| **1** | Final BCH decoder post-route layout (KLayout / Innovus screenshot) | [`docs/images/bch_floorplan.png`](docs/images/bch_floorplan.png) |
-| **2** | HW3 convolution input vs output, or a Verdi waveform capture | [`docs/images/convolution_io.png`](docs/images/convolution_io.png) |
-
-<p align="center">
-  <img src="docs/images/bch_floorplan.png" width="720" alt="Slot 1: add bch_floorplan.png — BCH post-route layout"/>
-</p>
-
-<p align="center">
-  <img src="docs/images/convolution_io.png" width="720" alt="Slot 2: add convolution_io.png — convolution or waveform visual"/>
-</p>
-
-Tips: export at **2× resolution** for sharpness on HiDPI; keep each file **under ~1–2 MB** so the README loads quickly. See [`docs/images/README.md`](docs/images/README.md).
-
 ---
 
 ## Skills Demonstrated
@@ -100,3 +81,5 @@ A focused per-project README inside each folder describes the architecture, key 
 This repository contains the **source RTL, scripts, constraints, and tool reports** from the original flow. Tool-generated artifacts that are large or environment-specific are excluded via `.gitignore` (Innovus `DBS/`, VCS `simv` / `csrc/`, SpyGlass DB, `*.gds`, compressed timing dumps, etc.) — the actual reports and netlists used for sign-off are kept.
 
 Re-running the flow requires Synopsys / Cadence licenses and the TSMC 0.13 µm CBDK PDK from the NTU CVSD lab environment.
+
+  <img src="docs/images/bch_floorplan.png" width="720" alt="Slot 1: add bch_floorplan.png — BCH post-route layout"/>
